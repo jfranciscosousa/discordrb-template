@@ -1,0 +1,111 @@
+AllCops:
+  TargetRubyVersion: 2.7.1
+
+Layout/LineLength:
+  Enabled: false
+
+Layout/ParameterAlignment:
+  EnforcedStyle: with_fixed_indentation
+
+Layout/DotPosition:
+  EnforcedStyle: trailing
+
+Layout/MultilineOperationIndentation:
+  EnforcedStyle: indented
+
+Layout/MultilineMethodCallIndentation:
+  EnforcedStyle: indented
+
+Layout/EmptyLinesAroundAttributeAccessor:
+  Enabled: true
+
+Layout/SpaceAroundMethodCallOperator:
+  Enabled: true
+
+Lint/DeprecatedOpenSSLConstant:
+  Enabled: true
+
+Naming/PredicateName:
+  ForbiddenPrefixes:
+    - is_
+    - have_
+
+Naming/MemoizedInstanceVariableName:
+  Enabled: false
+
+Style/AndOr:
+  EnforcedStyle: conditionals
+
+Style/ClassAndModuleChildren:
+  Enabled: false
+
+Style/Documentation:
+  Enabled: false
+
+Style/IfUnlessModifier:
+  Enabled: false
+
+Style/StringLiterals:
+  EnforcedStyle: double_quotes
+
+Style/NumericLiterals:
+  Enabled: false
+
+Style/SingleLineBlockParams:
+  Enabled: false
+
+Style/TrailingCommaInArguments:
+  EnforcedStyleForMultiline: comma
+
+Style/TrailingCommaInArrayLiteral:
+  EnforcedStyleForMultiline: comma
+
+Style/FrozenStringLiteralComment:
+  Enabled: false
+
+Style/Lambda:
+  EnforcedStyle: literal
+
+Style/HashEachMethods:
+  Enabled: true
+
+Style/HashTransformKeys:
+  Enabled: true
+
+Style/HashTransformValues:
+  Enabled: true
+
+Style/ExponentialNotation:
+  Enabled: false
+
+Style/SlicingWithRange:
+  Enabled: true
+
+Metrics/MethodLength:
+  Max: 15
+
+Lint/AmbiguousBlockAssociation:
+  Exclude:
+    - spec/**/*.rb
+
+Lint/RaiseException:
+  Enabled: true
+
+Lint/StructNewOverride:
+  Enabled: true
+
+# New cops
+
+Lint/DuplicateElsifCondition: { Enabled: true }
+Lint/MixedRegexpCaptureTypes: { Enabled: true }
+Style/AccessorGrouping: { Enabled: true }
+Style/ArrayCoercion: { Enabled: true }
+Style/BisectedAttrAccessor: { Enabled: true }
+Style/CaseLikeIf: { Enabled: true }
+Style/HashAsLastArrayItem: { Enabled: true }
+Style/HashLikeCase: { Enabled: true }
+Style/RedundantAssignment: { Enabled: true }
+Style/RedundantFetchBlock: { Enabled: true }
+Style/RedundantFileExtensionInRequire: { Enabled: true }
+Style/RedundantRegexpCharacterClass: { Enabled: true }
+Style/RedundantRegexpEscape: { Enabled: true }
