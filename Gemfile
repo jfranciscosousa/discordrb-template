@@ -1,10 +1,11 @@
 source "https://rubygems.org"
 
-ruby "2.7.1"
+ruby "3.0.0"
 
 gem "discordrb"
 gem "dotenv"
 gem "foreman"
+gem "puma"
 gem "rake"
 gem "sinatra"
 gem "zeitwerk"

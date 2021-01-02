@@ -6,7 +6,7 @@ All of this work is behind my blog post on how to make and host discord bots wit
 
 ## Pre-requisites
 
-Make sure you have `ruby 2.7.1` and that's it. The `bin/setup` script will use `asdf` if it's available. I recommend it. Any other ruby version manage will work.
+Make sure you have `ruby 3.0.0` and that's it. The `bin/setup` script will use `asdf` if it's available. I recommend it. Any other ruby version manage will work.
 
 ## Architecture
 

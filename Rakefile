@@ -4,7 +4,7 @@ require "dotenv/load" if ENV["RUBY_ENV"] != "production"
 
 Bundler.require(:default, ENV["RUBY_ENV"])
 loader = Zeitwerk::Loader.for_gem
-loader.push_dir(File.dirname(__FILE__) + "/src")
+loader.push_dir("#{File.dirname(__FILE__)}/src")
 loader.setup
 
 if Gem.loaded_specs.key?("rubocop")
