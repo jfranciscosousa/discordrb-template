@@ -10,7 +10,7 @@ module DiscordBot
   puts "Click on it to invite it to your server"
 
   @bot.message(with_text: "!ping") do |event|
-    event.respond "pong"
+    DiscordBot::Commands::Ping.new(event).call
   end
 
   def self.run
